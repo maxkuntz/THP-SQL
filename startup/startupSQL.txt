@@ -1,0 +1,33 @@
+CREATE TABLE `user` (
+`id` INTEGER PRIMARY KEY AUTOINCREMENT, 
+`name` TEXT
+);
+INSERT INTO user (name) VALUES ('Bob');
+INSERT INTO user (name) VALUES ('Jean');
+
+CREATE TABLE 'article' (
+    'id' INTEGER PRIMARY KEY AUTOINCREMENT,
+    'id_user' INTEGER,
+    'title' TEXT,
+    'content' TEXT
+) ;
+INSERT INTO article (id_user, title, content) VALUES (1, 'test1', 'salut');
+INSERT INTO article (id_user, title, content) VALUES (2, 'test2', 'coucou');
+INSERT INTO article (id_user, title, content) VALUES (2, 'test3', 'hello');
+
+CREATE TABLE 'category' (
+    'id' INTEGER PRIMARY KEY AUTOINCREMENT, 
+    'title' TEXT
+); 
+INSERT into category (title) VALUES ('tech');
+INSERT into category (title) VALUES ('science');
+
+CREATE TABLE `tag` (
+  `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+  `title` TEXT,
+  `color` TEXT
+);
+INSERT INTO tag (title, color) VALUES ('tag1', 'Vert');
+INSERT INTO tag (title, color) VALUES ('tag2', 'Orange');
+
+

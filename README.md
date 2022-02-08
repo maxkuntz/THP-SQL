@@ -1,0 +1,1 @@
+exos en SQL pour https://www.thehackingproject.org/
